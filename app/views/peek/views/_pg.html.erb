@@ -1,1 +1,10 @@
-<strong><span data-defer-to="<%= view.defer_key %>-duration">...</span> / <span data-defer-to="<%= view.defer_key %>-calls">...</span></strong> pg
+<strong>
+    <span data-defer-to="<%= view.defer_key %>-duration">
+        ...
+    </span>
+    /
+    <span class="peek-tooltip" data-defer-to="<%= view.defer_key %>-calls" original-title="<%= view.queries.join('\n') %>">
+        ...
+    </span>
+</strong>
+pg
